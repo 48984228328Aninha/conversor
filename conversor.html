@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+    <div id="taxaCambio">Carregando taxa de câmbio...</div>
+    <label for="inputNumber">Valor:</label>
+    <input id="inputNumber" type="text" placeholder="Digite o valor" />
+    <label for="inputBase">Converter de:</label>
+    <select id="inputBase">
+        <option value="Real">Real</option>
+        <option value="Dolar">Dolar</option>
+    </select>
+    <button id="btnConverter">Converter</button>
+    <div id="resultado"></div>
+    
+    <style>
+        #resultado, #taxaCambio { margin-top: 15px; font-weight: bold; }
+        label, select, input, button { margin: 5px 0; display: block; }
+    </style>
+    <script src="conversor.js"></script>
+
+</body>
+</html>
