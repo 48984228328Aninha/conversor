@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./conversor.css">
 </head>
 <body>
+
+    <section id="conversao">
+
     <h1>Conversor de Moedas</h1>
     <div id="taxaCambio">Carregando taxa de câmbio...</div>
     <label for="inputNumber">Valor:</label>
-    <input id="inputNumber" type="text" placeholder="Digite o valor" />
+    <input id="inputNumber" type="number" placeholder="Digite o valor" />
+   
+    
+
+    <div id="valores">
+
     <label for="inputBase">Converter de:</label>
     <select id="inputBase">
         <option value="Real">Real</option>
         <option value="Dolar">Dolar</option>
     </select>
+
+    </div>
+
     <button id="btnConverter">Converter</button>
     <div id="resultado"></div>
-    
-    <style>
-        #resultado, #taxaCambio { margin-top: 15px; font-weight: bold; }
-        label, select, input, button { margin: 5px 0; display: block; }
-    </style>
     <script src="conversor.js"></script>
-
+</section>
 </body>
 </html>
