@@ -4,14 +4,94 @@ body {
     margin: 0 auto;
     align-items: center;
     height: 100vh;
+    background-color: blueviolet;
+    font-family: monospace;
+    font-size: 1.2em;
 }
 
 #conversao {
-    border: 2px solid black;
+    border: 2px solid blue;
     display: grid;
     place-items: center;
-    width: 300px;
-    height: 300px;
-   
+    width: 600px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: white;
+    gap: 5px;
+    box-shadow: 1px 8px 9px 3px blue;
+}
+
+h1 {
+    background: linear-gradient(35deg, blue, blueviolet, blueviolet);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#conversao:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#conversao h1 {
+    font-size: 3em;
+    color: blueviolet;
+}
+
+#taxaCambio, #inputNumber {
+    color: blueviolet;
+    margin-top: -20px;
+}
+
+#labelId::placeholder {
+    color: gray;
+}
+
+#labelId {
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid;
+    background-color: aliceblue;
 
 }
+
+#labelId:hover {
+    background-color: rgb(214, 211, 211);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+
+#btnConverter {
+    width: 90px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 7px;
+    border: none;
+    background: linear-gradient(90deg, blue, blueviolet);
+    color: white;
+    background-size: 400% 400%;
+    animation: animar 1s infinite;
+}
+
+#btnConverter:hover {
+    background: linear-gradient(90deg, blue, blueviolet);
+    cursor: pointer;
+}
+
+#inputBase {
+    width: 70px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: aliceblue;
+}
+
+@keyframes animar {
+    0% { background-position: 0% 0%; }
+  50% { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; }
+}
+
+
